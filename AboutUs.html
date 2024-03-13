@@ -28,25 +28,29 @@
             background-color: #2d6930;
         }
 
-        #oval {
-            width: 200px;
-            height: 100px;
-            background: red;
-            border-radius: 100px / 50px;
-        }
+      .oblong-container {
+        width: 100px; 
+        height: 200px; 
+        border-radius: 50%;
+        overflow: hidden;
+        position: relative;
+    }
 
-        #image1 {
-            500px;
-            align-self: auto;
-            background-color: #dc022e;
-            width: 340px;
-            height: 100px;
-            border-radius: 30% / 100%;
-            border-bottom-left-radius: 100;
-            /*transform: rotate(10deg);*/
-            border-bottom-right-radius: 100;
-            opacity: 0.8;
-        }
+    .oblong-container img {
+        width: auto;
+        height: 100%;
+        display: block;
+    }
+
+    .oblong-container a {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        text-decoration: none;
+    }
+
     </style>
 
 </head>
@@ -63,48 +67,13 @@
 	
 
     <div>
-        <div id="image1"></div>
-    </div>
-	
-	
-	<div class="container">
-    <header>
-        <h1>About Us</h1>
-    </header>
-    <section>
-        <h2>Our Story</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut nisl justo. Aenean sed semper libero. Duis sed quam in est sodales fermentum.</p>
-    </section>
-    <section>
-        <h2>Our Mission</h2>
-        <p>Nulla facilisi. Duis condimentum, metus ut lobortis fermentum, magna libero dapibus velit, vitae fringilla leo turpis eu nisi. Ut nec ultricies sem.</p>
-    </section>
-    <section>
-        <h2>Our Team</h2>
-        <p>Meet our team members:</p>
-        <ul>
-            <li>John Doe - CEO</li>
-            <li>Jane Smith - CTO</li>
-            <li>Michael Johnson - CFO</li>
-        </ul>
-    </section>
+        <div class="oblong-container">
+    <a href="palma.html">
+        <img src="palma.jpg" alt="Image Description">
+    </a>
 </div>
 
-    <script>
-        // Get the current page URL
-        var currentPage = window.location.pathname;
-
-        // Check which page is active and add active class accordingly
-        if (currentPage.includes("HomePage.html")) {
-            document.getElementById("home").classList.add("active");
-        } else if (currentPage.includes("AboutUs.html")) {
-            document.getElementById("about").classList.add("active");
-        } else if (currentPage.includes("Location.html")) {
-            document.getElementById("location").classList.add("active");
-        } else if (currentPage.includes("ContactUs.html")) {
-            document.getElementById("contact").classList.add("active");
-        }
-    </script>
+   
 
 </body>
 
