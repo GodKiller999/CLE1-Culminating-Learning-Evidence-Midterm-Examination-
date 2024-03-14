@@ -28,25 +28,25 @@
             background-color: #2d6930;
         }
 
-        .image-row {
+        .image-column {
             text-align: center;
-            margin-top: 50px; 
+            margin-top: 50px;
         }
 
         .oblong-container {
-            width: 500px; 
+            width: 300px; 
             height: 500px; 
             border-radius: 100%;
             overflow: hidden;
             position: relative;
-            margin: 0 20px; 
-            display: inline-block; 
+            margin: 0 auto 20px auto; 
         }
 
         .oblong-container img {
-            width: 100%; 
-            height: auto; 
+            width: 100%;
+            height: 100%;
             display: block;
+            object-fit: cover; 
         }
 
         .oblong-container a {
@@ -69,7 +69,7 @@
         <li><a id="contact" href="">Contact Us</a></li>
     </ul>
 
-    <div class="image-row">
+    <div class="image-column">
         <div class="oblong-container">
             <a href="palma.html">
                 <img src="palma.jpg" alt="Image Description">
