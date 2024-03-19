@@ -1,0 +1,210 @@
+ </div>
+	
+	
+	<div class="container">
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <section>
+        <h2>Our Story</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ut nisl justo. Aenean sed semper libero. Duis sed quam in est sodales fermentum.</p>
+    </section>
+    <section>
+        <h2>Our Mission</h2>
+        <p>Nulla facilisi. Duis condimentum, metus ut lobortis fermentum, magna libero dapibus velit, vitae fringilla leo turpis eu nisi. Ut nec ultricies sem.</p>
+    </section>
+    <section>
+        <h2>Our Team</h2>
+        <p>Meet our team members:</p>
+        <ul>
+            <li>John Doe - CEO</li>
+            <li>Jane Smith - CTO</li>
+            <li>Michael Johnson - CFO</li>
+        </ul>
+    </section>
+</div>
+
+    <script>
+        // Get the current page URL
+        var currentPage = window.location.pathname;
+
+        // Check which page is active and add active class accordingly
+        if (currentPage.includes("HomePage.html")) {
+            document.getElementById("home").classList.add("active");
+        } else if (currentPage.includes("AboutUs.html")) {
+            document.getElementById("about").classList.add("active");
+        } else if (currentPage.includes("Location.html")) {
+            document.getElementById("location").classList.add("active");
+        } else if (currentPage.includes("ContactUs.html")) {
+            document.getElementById("contact").classList.add("active");
+        }
+    </script>
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Us</title>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            position: relative; 
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 15px;
+            text-decoration: none;
+        }
+        li {
+            float: left;
+        }
+        li a:hover {
+            background-color: #4CAE51;
+        }
+        .active {
+            background-color: #2d6930;
+        }
+
+        .back-button {
+            position: absolute; 
+            top: 80px; 
+            left: 15px; 
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAE51;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .back-button:hover {
+            background-color: #388e3c;
+        }
+
+        .image-column {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .oblong-container {
+            width: 300px; 
+            height: 500px; 
+            border-radius: 100%;
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto 20px auto; 
+        }
+
+        .oblong-container img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover; 
+        }
+
+        .oblong-container a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <ul>
+        <li><a id="home" href="HomePage.html">Home</a></li>
+        <li><a id="about" href="AboutUs.html">About</a></li>
+        <li><a id="location" href="">Location</a></li>
+        <li><a id="contact" href="">Contact Us</a></li>
+        <a href="AboutUs.html" class="back-button">Back</a> 
+    </ul>
+
+    <div class="image-column">
+        <div class="oblong-container">
+            <a href="palma.html">
+                <img src="palma.jpg" alt="Image Description">
+            </a>
+        </div>
+
+        <div class="oblong-container">
+            <a href="ezekiel.html">
+                <img src="ezekiel.jpg" alt="Image Description">
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<title>
+ Jhon Christian Palma Profile
+</title>
+<style>
+ ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+        }
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 15px;
+            text-decoration: none;
+        }
+        li {
+            float: left;
+        }
+        li a:hover {
+            background-color: #4CAE51;
+        }
+        .active {
+            background-color: #2d6930;
+        }
+	.back-button {
+            position: absolute; 
+            top: 80px; 
+            left: 15px; 
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAE51;
+            color: white;
+            text-decoration: none;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+</style>
+<body>
+ <ul>
+        <li> <a class="active" href="HomePage.html"> Home </a> </li>
+        <li> <a href="AboutUs.html"> About </a> </li>
+        <li> <a href="Location.html"> Location </a> </li>
+        <li> <a href="Contact.html"> Contact Us </a> </li>
+	<a href="AboutUs.html" class="back-button">Back</a>
+    </ul>
+<div>
+	<div id="palma.jpg"></div>
+</body>
+</html>
+
