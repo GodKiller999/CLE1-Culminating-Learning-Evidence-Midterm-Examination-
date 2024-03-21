@@ -2,7 +2,15 @@
 <html>
 
 <head>
+    <title>Home Page</title>
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
         ul {
             list-style-type: none;
             margin: 0;
@@ -13,9 +21,10 @@
         li a {
             display: block;
             color: white;
-            text-align: center;
-            padding: 15px 15px;
+            padding: 15px;
             text-decoration: none;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         }
         li {
             float: left;
@@ -26,25 +35,14 @@
         .active {
             background-color: #2d6930;
         }
-		
-		 #oval {
-      width: 200px;
-      height: 100px;
-      background: red;
-      border-radius: 100px / 50px;
-    }
-	
-	   #image1 { 500px;
-    align-self: auto;
-    background-color: #dc022e;
-    width: 340px;
-    height: 100px;
-    border-radius: 30% / 100%;
-    border-bottom-left-radius: 100;
-    /*transform: rotate(10deg);*/
-    border-bottom-right-radius: 100;
-    opacity: 0.8;
-    }
+
+        #image1 {
+            width: 100%;
+            height: 300px;
+            background-image: url('discrimination.jpeg'); /* Add the path to your image */
+            background-size: cover;
+            background-position: center; /* Position the background image at the bottom */
+        }
     </style>
 
 </head>
@@ -54,18 +52,13 @@
     <ul>
         <li> <a class="active" href="HomePage.html"> Home </a> </li>
         <li> <a href="AboutUs.html"> About </a> </li>
-        <li> <a href=""> Location </a> </li>
-        <li> <a href=""> Contact Us </a> </li>
+        <li> <a href="RaceDiscrimination.html"> Race Discrimination </a> </li>
+        <li> <a href="EthnicityDiscrimination.html"> Ethnicity Discrimination </a> </li>
     </ul>
-	
-	<div>
-  <div id="image1"></div>
-</div>
+    
+    <div id="image1"></div>
+    <!-- You can add more content here to describe your homepage -->
 
 </body>
 
 </html>
-
-<--a home page area-->
-
-<--a home page area-->
