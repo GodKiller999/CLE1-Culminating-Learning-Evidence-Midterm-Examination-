@@ -2,4 +2,4 @@
 Our Midterm Exam in Web Authoring 
 
 
-This will be our meeting area
+The Folder above is our Polished work(sir kapoy polish sng ubra nila huhuhuhuhuhuhuhuhu AyLabyu Sir)
