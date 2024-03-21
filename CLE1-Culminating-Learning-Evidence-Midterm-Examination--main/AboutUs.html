@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Us</title>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url("car.jpeg"); /* Set the background image */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    background-size: cover; /* Cover the entire background with the image */
+}
+
+
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: black;
+            position: relative;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            padding: 15px;
+            text-decoration: none;
+            text-transform: uppercase;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        li {
+            float: left;
+        }
+
+        li a:hover {
+            background-color: #4CAE51;
+        }
+
+        .active {
+            background-color: #2d6930;
+        }
+
+        .image-column {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        .oblong-container {
+            width: 500px; /* Make the oblong wider */
+            height: 700px; /* Make the oblong taller */
+            border-radius: 50%;
+            overflow: hidden;
+            position: relative;
+            margin: 0 auto 20px auto;
+        }
+
+        .oblong-container img {
+            width: 100%;
+            height: 100%;
+            display: block;
+            object-fit: cover;
+        }
+
+        .oblong-container a {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            text-decoration: none;
+        }
+
+        .text {
+            font-family: Arial, sans-serif;
+            font-size: 20px;
+            text-align: center;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            padding-left: 10px;
+            padding-right: 10px;
+            margin-top: 10px;
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li><a id="home" href="HomePage.html">Home</a></li>
+        <li><a id="about" href="AboutUs.html">About Us</a></li>
+        <li> <a href="otherpage.html"> Race & Ethnicity Discrimination </a> </li>
+        <li><a id="solution" href="solution.html">Solutions</a></li>
+
+    </ul>
+
+    <div class="image-column">
+        <div class="oblong-container">
+            <a href="ezekil.html">
+                <img src="ezekiel.jpg" alt="Image Description">
+            </a>
+        </div>
+        <div class="text">
+            <a href="ezekiel.html">
+                <p>John Ezekil Gulmatico</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="image-column">
+        <div class="oblong-container">
+            <a href="palma.html">
+                <img src="palma.jpg" alt="Image Description">
+            </a>
+        </div>
+        <div class="text">
+            <a href="palma.html">
+                <p>Jhon Christian Palma</p>
+            </a>
+        </div>
+    </div>
+
+    <div class="image-column">
+        <div class="oblong-container">
+            <a href="gilbert.html">
+                <img src="Kraken.jpeg" alt="Image Description">
+            </a>
+        </div>
+        <div class="text">
+            <a href="gilbert.html">
+                <p>Ken Gilbert Colegado</p>
+            </a>
+        </div>
+    </div>
+
+</body>
+
+</html>
